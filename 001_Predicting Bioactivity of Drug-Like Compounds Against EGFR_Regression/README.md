@@ -50,7 +50,7 @@ This regression-based project provides a comprehensive workflow for predicting t
 
 ## Next Steps
 - **Classification Analysis**:  
-  A potential next step could involve defining bioactivity thresholds (e.g., pIC50 ≥ 6 for Active compounds) to classify compounds as Active, Intermediate, or Inactive. Conducting a classification analysis may offer additional insights by allowing a comparison of activity levels and focusing on the properties that differentiate highly active compounds from less active ones. This approach complements the regression analysis by providing a categorical perspective on compound efficacy.
+  Classification Analysis: A potential next step could involve defining more stringent bioactivity thresholds (e.g., pIC50 ≥ 8 for Highly Active, 6 ≤ pIC50 < 8 for Moderately Active, and 5 ≤ pIC50 < 6 for Intermediate) to classify compounds based on varying levels of activity. Conducting a classification analysis with these categories may offer additional insights by highlighting the molecular properties that differentiate highly potent compounds from those with moderate or low activity. This approach complements the regression analysis by providing a categorical perspective on compound efficacy and facilitating targeted identification of strong inhibitors.
 
 - **Alternative Models**:  
   Explore other machine learning models, such as XGBoost, LightGBM, or Support Vector Machines, and compare their performance to the Random Forest model to assess if further improvements in accuracy can be achieved.
