@@ -1,4 +1,4 @@
-# Predicting Bioactivity of Drug Compounds Against EGFR Using Machine Learning
+# Predicting Bioactivity of Pre-Clinical Drug-Like Compounds Against EGFR Using Classification-Based Machine Learning
 
 This project demonstrates a **regression-based approach** to predict the bioactivity (pIC50) of drug-like compounds against the Epidermal Growth Factor Receptor (EGFR), a crucial target in cancer drug discovery. By predicting continuous IC50 values, the model provides valuable insights into compound potency and can aid in identifying potential inhibitors for EGFR, an oncogenic protein associated with cell proliferation and survival in multiple cancers.
 
