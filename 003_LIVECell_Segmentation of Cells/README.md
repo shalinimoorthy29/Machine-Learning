@@ -10,8 +10,8 @@ The dataset contains high-quality annotated cell images collected using the Incu
 [https://github.com/sartorius-research/LIVECell](https://github.com/sartorius-research/LIVECell)
 
 **Dataset Details**:
-- A total of **1,000 images** from multiple cell lines at different confluencies were used.
-- Of these, **848 images** had matched annotations provided in the `LIVECell_train.json` file.
+- A total of **3,727 images** from multiple cell lines at different confluencies were used.
+- Of these, **3,188 images** had matched annotations provided in the `LIVECell_train.json` file.
 
 ## Objectives
 
