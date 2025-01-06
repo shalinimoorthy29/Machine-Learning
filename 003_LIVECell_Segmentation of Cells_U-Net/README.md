@@ -49,5 +49,72 @@ The dataset contains high-quality annotated cell images collected using the Incu
 
 ## Results and Conclusion
 
-**Status**: _In Progress_  
-The model is currently being trained. Results will be updated once training is complete.
+### Summary of Training Output
+
+**Dataset Overview:**
+
+- Training Data: 457 images, each of size 512 x 512 with 3 channels.
+- Validation Data: 115 images, also of size 512 x 512 x 3.
+- Masks: Mismatched dimensions in masks were addressed during preprocessing to ensure compatibility with the model.
+
+**Model Performance:**
+
+Final Training Metrics:
+- Accuracy: 85.82%
+- Dice Coefficient: 0.7987
+- IoU (Intersection over Union): 0.6659
+- Loss: 0.3152
+
+Final Validation Metrics:
+- Accuracy: 86.01%
+- Dice Coefficient: 0.7865
+- IoU: 0.6493
+- Loss: 0.3065
+
+**Key Observations:**
+- The model showed steady improvements in metrics, with significant increases in Dice coefficient and IoU between epochs 5–10.
+- Early stopping did not trigger, indicating that the model was still improving at the maximum configured epochs.
+- The validation Dice coefficient of **0.7865** and IoU of **0.6493** indicate good segmentation performance for the dataset size.
+
+---
+
+## Next Steps
+
+To improve the segmentation performance, particularly the Dice coefficient, IoU, and accuracy, consider the following tuning methods:
+
+1. **Increase Epochs**:
+   - Extend the training to **30 epochs** or more, allowing the model to learn further patterns.
+   - Early stopping will ensure training halts if overfitting occurs.
+
+2. **Data Augmentation**:
+   - Introduce techniques such as flipping, rotation, scaling, and brightness adjustments to artificially expand the dataset and improve model generalisation.
+
+3. **Learning Rate Scheduling**:
+   - Experiment with lower initial learning rates (e.g., `1e-5`) or use learning rate warm-up strategies for smoother convergence.
+
+4. **Batch Size Optimisation**:
+   - Test with larger batch sizes (e.g., 32 or 64) to stabilise gradient updates, provided memory resources allow.
+
+5. **Model Architecture**:
+   - Replace the U-Net's encoder with a **pre-trained backbone** such as ResNet or EfficientNet to leverage transfer learning.
+   - Add more layers or increase filter sizes in the encoder and decoder for better feature extraction.
+
+6. **Loss Function**:
+   - Experiment with **Dice loss** or **Tversky loss**, which are tailored for imbalanced segmentation tasks.
+
+7. **Hyperparameter Tuning**:
+   - Use tools like **Optuna** or **GridSearchCV** to systematically explore combinations of hyperparameters (e.g., learning rate, dropout, regularisation strength).
+
+8. **Post-Processing**:
+   - Refine predictions with techniques such as **CRF (Conditional Random Fields)** or morphological operations to improve mask quality.
+
+---
+
+## Visualisation
+
+- Include plots of the learning curves for training and validation accuracy, Dice coefficient, IoU, and loss.
+- Visualise sample segmentation results (ground truth vs predicted masks) to assess qualitative performance.
+
+## Acknowledgements
+
+Special thanks to the developers of the **LIVECell Dataset** and the community contributing to advancements in deep learning-based microscopy analysis.
