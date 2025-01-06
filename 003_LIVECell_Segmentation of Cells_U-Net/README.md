@@ -1,4 +1,4 @@
-# Segmentation of Cells in Phase-Contrast Microscopy Images with the U-Net Convolutional Neural Network 
+# Cell Segmentation in Phase-Contrast Microscopy Using Deep Learning
 
 ## Dataset Used
 
