@@ -75,8 +75,6 @@ Final Validation Metrics:
 - Early stopping did not trigger, indicating that the model was still improving at the maximum configured epochs.
 - The validation Dice coefficient of **0.7865** and IoU of **0.6493** indicate good segmentation performance for the dataset size.
 
----
-
 ## Next Steps
 
 To improve the segmentation performance, particularly the Dice coefficient, IoU, and accuracy, consider the following tuning methods:
@@ -106,8 +104,6 @@ To improve the segmentation performance, particularly the Dice coefficient, IoU,
 
 8. **Post-Processing**:
    - Refine predictions with techniques such as **CRF (Conditional Random Fields)** or morphological operations to improve mask quality.
-
----
 
 ## Visualisation
 
