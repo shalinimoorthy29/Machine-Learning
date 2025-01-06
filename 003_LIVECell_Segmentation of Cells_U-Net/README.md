@@ -1,5 +1,4 @@
-# Cell Segmentation in Phase-Contrast Microscopy 
-# Using Deep Learning
+# Cell Segmentation in Phase-Contrast Microscopy Using Deep Learning
 
 ## Dataset Used
 
