@@ -113,3 +113,21 @@ To improve the segmentation performance, particularly the Dice coefficient, IoU,
 ## Acknowledgements
 
 Special thanks to the developers of the **LIVECell Dataset** and the community contributing to advancements in deep learning-based microscopy analysis.
+
+<video src="https://github.com/user-attachments/assets/3e4e1243-9455-48c5-a6a9-258b28643914"
+       width="600"
+       controls
+       loop
+       muted
+       autoplay>
+  Your browser does not support the video tag.
+</video>
+
+
+
+
+
+
+
+
+
