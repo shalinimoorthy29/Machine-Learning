@@ -75,6 +75,16 @@ Final Validation Metrics:
 - Early stopping did not trigger, indicating that the model was still improving at the maximum configured epochs.
 - The validation Dice coefficient of **0.7865** and IoU of **0.6493** indicate good segmentation performance for the dataset size.
 
+**Model Testing via Streamlit app:**
+<video src="https://github.com/user-attachments/assets/3e4e1243-9455-48c5-a6a9-258b28643914"
+       width="600"
+       controls
+       loop
+       muted
+       autoplay>
+  Your browser does not support the video tag.
+</video>
+
 ## Next Steps
 
 To improve the segmentation performance, particularly the Dice coefficient, IoU, and accuracy, consider the following tuning methods:
@@ -113,15 +123,6 @@ To improve the segmentation performance, particularly the Dice coefficient, IoU,
 ## Acknowledgements
 
 Special thanks to the developers of the **LIVECell Dataset** and the community contributing to advancements in deep learning-based microscopy analysis.
-
-<video src="https://github.com/user-attachments/assets/3e4e1243-9455-48c5-a6a9-258b28643914"
-       width="600"
-       controls
-       loop
-       muted
-       autoplay>
-  Your browser does not support the video tag.
-</video>
 
 
 
